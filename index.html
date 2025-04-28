@@ -1,1 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="174042652999114786.png">
+    <title>Alabama Sportsman</title>
+    <style>
+        body {
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: flex-start;
+            height: 100vh;
+        }
+        .logo {
+            margin-top: 20px; /* Adjust as needed */
+            width: 200px; /* Adjust as needed */
+            height: auto; /* Keeps aspect ratio */
+            z-index: 10;
+        }
+        html, body {
+            margin: 0;
+            padding: 0;
+            }
+
+            video {
+            width: 100vw;
+            height: 100vh;
+            position: fixed;
+            object-fit: cover;
+            }
+            .cards-list {
+  z-index: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.card {
+  margin: 30px auto;
+  width: 300px;
+  height: 300px;
+  border-radius: 40px;
+box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.22);
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.card .card_image {
+  width: inherit;
+  height: inherit;
+  border-radius: 40px;
+}
+
+.card .card_image img {
+  width: inherit;
+  height: inherit;
+  border-radius: 40px;
+  object-fit: cover;
+}
+
+.card .card_title {
+  text-align: center;
+  border-radius: 0px 0px 40px 40px;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  margin-top: -10px;
+  height: 40px;
+}
+
+.card:hover {
+  transform: scale(0.9, 0.9);
+  box-shadow: 5px 5px 30px 15px rgba(0,0,0,0.25), 
+    -5px -5px 30px 15px rgba(0,0,0,0.22);
+}
+
+.title-white {
+  color: white;
+}
+
+.title-black {
+  color: black;
+}
+
+@media all and (max-width: 500px) {
+  .card-list {
+    /* On small screens, we are no longer using row direction but column */
+    flex-direction: column;
+  }
+}
+
+    </style>
+</head>
+<body>
+    <img src="174042652999114786.png" alt="Logo" class="logo">
+    <video autoplay muted loop>
+        <source src="alsportsman.mp4" type="video/mp4">
+      </video>
+    <br/><br>
+      <div class="cards-list">
+  
+        <div class="card 1">
+          <div class="card_image"> <img src="podcast.png" /> </div>
+          <div class="card_title title-white">
+            <p>Podcast</p>
+          </div>
+        </div>
+        
+        <div class="card 1">
+            <div class="card_image"> <img src="shop2.png" /> </div>
+            <div class="card_title title-white">
+              <p>Shop</p>
+            </div>
+          </div>
+        
+          <div class="card 1">
+            <div class="card_image"> <img src="campfire.png" /> </div>
+            <div class="card_title title-white">
+              <p>Blog</p>
+            </div>
+          </div>
+          
+          <div class="card 1">
+            <div class="card_image"> <img src="socialmedia.png" /> </div>
+            <div class="card_title title-white">
+              <p>Social Media</p>
+            </div>
+          </div>
+        
+        </div>
+</body>
+</html>
+
+
 
