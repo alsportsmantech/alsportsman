@@ -98,9 +98,11 @@ box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.2
 </head>
 <body>
     <img src="174042652999114786.png" alt="Logo" class="logo">
-    <video autoplay muted loop playsinline>
+    <video id="video" autoplay muted loop playsinline>
         <source src="https://res.cloudinary.com/ddxa5fszf/video/upload/q_auto:low/q_25/v1745939745/alsp_htl6id.mp4" type="video/mp4">
       </video>
+    <img id="img" autoplay="autoplay" preload="metadata" playsinline muted="on" class="fullscreen-video" loop="loop" src="https://res.cloudinary.com/ddxa5fszf/video/upload/q_auto:low/q_25/v1745939745/alsp_htl6id.mp4" >
+
     <br/><br>
       <div class="cards-list">
   
@@ -131,8 +133,18 @@ box-shadow: 5px 5px 30px 7px rgba(0,0,0,0.25), -5px -5px 30px 7px rgba(0,0,0,0.2
               <p>Social Media</p>
             </div>
           </div></a>
-        
+
         </div>
+    <script>
+    var isSafari = /^((?!chrome|android).)*safari/i.test(navigator.userAgent);
+    if (isSafari) {
+      document.getElementById("video").style.display = "none";
+    } else {
+      document.getElementById("img").style.display = "none";
+    }
+    </script>
+
+
 </body>
 </html>
 
